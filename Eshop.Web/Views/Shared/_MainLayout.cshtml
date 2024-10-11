@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <partial name="_MetaTags" />
+    <title>@ViewBag.Title | فروشگاه برنامه نویسان</title>
+    <partial name="_StyleRefrences" />
+
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- start of page-header -->
+        <partial name="_PageHeader" />
+        <!-- end of page-header -->
+        <partial name="_HeaderResponsive" />
+        <!-- start of page-content -->
+        <main class="page-content">
+            @RenderBody()
+        </main>
+        <!-- end of page-content -->
+        <partial name="_Footer" />
+    </div>
+    <partial name="_JsRefrences" />
+    @RenderSection("Scripts",false)
+</body>
+
+</html>

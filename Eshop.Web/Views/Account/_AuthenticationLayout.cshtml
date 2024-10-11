@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <partial name="_AuthenticationMetaTags" />
+    <title>@ViewData["Title"] - Eshop.Web</title>
+    <partial name="_AuthenticationStyles" />
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <partial name="_AuthenticationHeader" />
+        <main class="page-content page-auth">
+            @RenderBody()
+        </main>
+        <partial name="_AuthenticationFooter" />
+    </div>
+
+    <partial name="_AuthenticationScripts" />
+</body>
+
+</html>
