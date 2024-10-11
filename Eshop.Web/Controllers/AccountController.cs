@@ -23,6 +23,7 @@ namespace Eshop.Web.Controllers
             return View();
         }
 
+
         [HttpPost("/register")]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
